@@ -67,7 +67,7 @@ df_heat = df_heat.iloc[::-1]
 st.markdown("""
 <style>
 .block-container {
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
