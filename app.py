@@ -415,7 +415,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<p style="font-size:26px;font-weight:700;color:#2D2D2D;margin-bottom:4px;'
+    '<p style="font-size:26px;font-weight:700;color:#2D2D2D;margin-bottom:4px;margin-top:40px;'
     'font-family:Segoe UI,sans-serif;line-height:1.2;">'
     "US College Tuition &amp; Fees Dashboard"
     "</p>",
