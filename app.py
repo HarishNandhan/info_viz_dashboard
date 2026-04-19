@@ -107,10 +107,15 @@ st.markdown(
     '<div style="height:4px;background:#2E86AB;border-radius:2px;margin-bottom:12px;"></div>',
     unsafe_allow_html=True,
 )
-st.title("US College Tuition & Fees Dashboard")
 st.markdown(
-    '<p style="font-size:15px;color:#6C757D;margin-top:-12px;margin-bottom:2px;">'
+    '<p style="font-size:15px;color:#6C757D;margin-bottom:2px;">'
     "Analyzing tuition trends, state comparisons, and total cost of attendance across US institutions (2000–2023)"
+    "</p>",
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<p style="font-size:20px;font-weight:700;color:#2D2D2D;margin-bottom:4px;">'
+    "US College Tuition &amp; Fees Dashboard"
     "</p>",
     unsafe_allow_html=True,
 )
