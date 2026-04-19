@@ -332,21 +332,10 @@ def build_chart4():
 st.markdown(
     """
 <style>
-/* Thin blue top border across the full page */
-body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 4px;
-    background-color: #2E86AB;
-    z-index: 9999;
-}
-
 /* Reset Streamlit chrome */
 #root > div:first-child { background-color: #FFFFFF; }
 .block-container {
-    padding-top: 2.5rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -359,14 +348,6 @@ html, body, [class*="css"] {
     font-family: 'Segoe UI', sans-serif;
     color: #2D2D2D;
     background-color: #FFFFFF;
-}
-
-/* Prevent Streamlit from overriding h1 size */
-h1 {
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: #2D2D2D !important;
-    padding-bottom: 0 !important;
 }
 
 /* KPI card hover effect */
@@ -415,12 +396,6 @@ hr {
 }
 
 /* Footer */
-.footer-bar {
-    background-color: #F8F9FA;
-    border-top: 1px solid #E8E8E8;
-    padding: 16px 0 8px 0;
-    margin-top: 8px;
-}
 .footer-text {
     font-size: 12px;
     color: #6C757D;
@@ -434,11 +409,16 @@ hr {
 # ─────────────────────────────────────────────
 # DASHBOARD TITLE SECTION
 # ─────────────────────────────────────────────
+# Top accent bar rendered as inline HTML (fixed CSS overlay breaks in Streamlit Cloud)
 st.markdown(
-    '<h1 style="font-size:20px;font-weight:700;color:#2D2D2D;margin-bottom:2px;'
-    'margin-top:0;font-family:Segoe UI,sans-serif;line-height:1.3;">'
+    '<div style="height:4px;background-color:#2E86AB;border-radius:2px;margin-bottom:16px;"></div>',
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<p style="font-size:26px;font-weight:700;color:#2D2D2D;margin-bottom:4px;'
+    'font-family:Segoe UI,sans-serif;line-height:1.2;">'
     "US College Tuition &amp; Fees Dashboard"
-    "</h1>",
+    "</p>",
     unsafe_allow_html=True,
 )
 st.markdown(
