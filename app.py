@@ -108,20 +108,14 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<p style="font-size:15px;color:#6C757D;margin-bottom:2px;">'
-    "Analyzing tuition trends, state comparisons, and total cost of attendance across US institutions (2000–2023)"
-    "</p>",
-    unsafe_allow_html=True,
-)
-st.markdown(
-    '<p style="font-size:20px;font-weight:700;color:#2D2D2D;margin-bottom:4px;">'
+    '<p style="font-size:20px;font-weight:700;color:#2D2D2D;margin-bottom:2px;">'
     "US College Tuition &amp; Fees Dashboard"
     "</p>",
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<p style="font-size:11px;color:#9E9E9E;font-style:italic;margin-bottom:8px;">'
-    "Source: National Center for Education Statistics (NCES)"
+    '<p style="font-size:15px;color:#6C757D;margin-bottom:8px;">'
+    "Analyzing tuition trends, state comparisons, and total cost of attendance across US institutions (2000–2023)"
     "</p>",
     unsafe_allow_html=True,
 )
