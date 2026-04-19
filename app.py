@@ -346,7 +346,7 @@ body::before {
 /* Reset Streamlit chrome */
 #root > div:first-child { background-color: #FFFFFF; }
 .block-container {
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -359,6 +359,14 @@ html, body, [class*="css"] {
     font-family: 'Segoe UI', sans-serif;
     color: #2D2D2D;
     background-color: #FFFFFF;
+}
+
+/* Prevent Streamlit from overriding h1 size */
+h1 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #2D2D2D !important;
+    padding-bottom: 0 !important;
 }
 
 /* KPI card hover effect */
@@ -427,10 +435,10 @@ hr {
 # DASHBOARD TITLE SECTION
 # ─────────────────────────────────────────────
 st.markdown(
-    '<p style="font-size:22px;font-weight:700;color:#2D2D2D;margin-bottom:2px;'
-    'font-family:Segoe UI,sans-serif;white-space:nowrap;">'
+    '<h1 style="font-size:20px;font-weight:700;color:#2D2D2D;margin-bottom:2px;'
+    'margin-top:0;font-family:Segoe UI,sans-serif;line-height:1.3;">'
     "US College Tuition &amp; Fees Dashboard"
-    "</p>",
+    "</h1>",
     unsafe_allow_html=True,
 )
 st.markdown(
