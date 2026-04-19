@@ -427,8 +427,8 @@ hr {
 # DASHBOARD TITLE SECTION
 # ─────────────────────────────────────────────
 st.markdown(
-    '<p style="font-size:28px;font-weight:700;color:#2D2D2D;margin-bottom:2px;'
-    'font-family:Segoe UI,sans-serif;">'
+    '<p style="font-size:22px;font-weight:700;color:#2D2D2D;margin-bottom:2px;'
+    'font-family:Segoe UI,sans-serif;white-space:nowrap;">'
     "US College Tuition &amp; Fees Dashboard"
     "</p>",
     unsafe_allow_html=True,
@@ -444,8 +444,7 @@ st.markdown(
 st.markdown(
     '<p style="font-size:11px;color:#9E9E9E;font-style:italic;margin-bottom:20px;'
     'font-family:Segoe UI,sans-serif;">'
-    "Source: National Center for Education Statistics (NCES) | "
-    "Data represents 4-year public institutions"
+    "Source: National Center for Education Statistics (NCES)"
     "</p>",
     unsafe_allow_html=True,
 )
